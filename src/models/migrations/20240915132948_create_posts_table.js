@@ -11,9 +11,7 @@ exports.up = function (knex) {
         table.timestamp('created_at').defaultTo(knex.fn.now())
         table.timestamp('published_at').nullable()
         table.timestamp('deleted_at').nullable()
-    }
-
-    )
+    })
 };
 
 /**
